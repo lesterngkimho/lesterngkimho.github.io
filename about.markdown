@@ -1,18 +1,15 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About Me
+permalink: /about-me/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi! I'm Lester, a software engineer based in Malaysia. I enjoy building software applications and exploring new technologies.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+With experience in both frontend and backend development, I am passionate about solving problems and creating impactful digital solutions.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+When I'm not coding, I like to read, learn new skills, and contribute to open source projects.
 
+When I'm not doing anything IT-related, I like to drive around the city and explore some random things.
 
-[jekyll-organization]: https://github.com/jekyll
+Feel free to connect with me to discuss technology, collaboration, or just to say hello!
