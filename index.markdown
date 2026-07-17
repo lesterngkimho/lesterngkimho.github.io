@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+Hi, I'm Lester — a full-time software developer based in Malaysia, currently open to freelance collaborations.
+
+[View my projects](/projects/) · [What I can help with](/hire-me/) · [Get in touch](/contact/)

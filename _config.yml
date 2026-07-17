@@ -21,16 +21,25 @@
 title: Lester Ng Kim Ho
 email: lesterngkimho@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal home of Lester Ng Kim Ho on this thing called the Internet.
+  Lester Ng Kim Ho — full-time software developer based in Malaysia, open to freelance collaborations.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lesterngkimho.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lesterngkimho
 github_username:  lesterngkimho
 
+# Controls the order of pages in the site header nav (minima theme)
+header_pages:
+  - about.markdown
+  - projects.markdown
+  - hire-me.markdown
+  - contact.markdown
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
