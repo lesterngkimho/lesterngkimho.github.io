@@ -1,0 +1,17 @@
+---
+layout: single
+title: "Welcome to my website"
+categories: welcome
+---
+
+Hi, I'm Lester. I'm a software engineering analyst in Malaysia, and most of my working days go into mobile apps, mainly with Ionic, Angular and Capacitor. I'm now getting into native Android with Kotlin and Jetpack Compose.
+
+This site is where I'll keep track of what I build and what I learn along the way:
+
+- [Projects](/projects/) — what I've built, starting with BananaCina, a personal app for learning Malaysian Mandarin.
+- [About](/about-me/) — my background and the tools I use.
+- [Hire me](/hire-me/) — if you have a project that could use a hand after office hours, get in touch.
+
+I plan to write here about the things I actually run into: setting up a Linux toolchain for mobile work, moving from hybrid to native, and the small problems that take an afternoon to solve. If something here is useful to you, or you spot a mistake, [let me know](/contact/).
+
+Thanks for stopping by.

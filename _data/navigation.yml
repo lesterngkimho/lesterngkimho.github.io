@@ -1,0 +1,10 @@
+# Main site navigation (header menu)
+main:
+  - title: "About"
+    url: /about-me/
+  - title: "Projects"
+    url: /projects/
+  - title: "Hire Me"
+    url: /hire-me/
+  - title: "Contact"
+    url: /contact/

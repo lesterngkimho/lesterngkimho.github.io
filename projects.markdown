@@ -1,37 +1,22 @@
 ---
-layout: page
+layout: single
 title: Projects
 permalink: /projects/
 ---
 
 A selection of things I've built. Check my [GitHub](https://github.com/{{ site.github_username }}) for everything else.
 
-*(The entries below are placeholders — replace with your real projects.)*
+{% for project in site.data.projects %}
+## {{ project.name }}
 
-## [Project Name One]
+{{ project.description }}
 
-*[One or two sentences on what it does and the problem it solves.]*
+**Stack:** {{ project.stack | join: ", " }}
 
-**Stack:** [e.g. React, Node.js, PostgreSQL]
-
-[Live Demo](#) · [Source](#)
-
+{% if project.demo != "" or project.source != "" -%}
+{% if project.demo != "" %}[Live Demo]({{ project.demo }}){% endif %}{% if project.demo != "" and project.source != "" %} · {% endif %}{% if project.source != "" %}[Source]({{ project.source }}){% endif %}
+{% endif %}
+{% unless forloop.last %}
 ---
-
-## [Project Name Two]
-
-*[One or two sentences on what it does and the problem it solves.]*
-
-**Stack:** [e.g. Python, FastAPI, Docker]
-
-[Live Demo](#) · [Source](#)
-
----
-
-## [Project Name Three]
-
-*[One or two sentences on what it does and the problem it solves.]*
-
-**Stack:** [e.g. Swift, iOS]
-
-[Live Demo](#) · [Source](#)
+{% endunless %}
+{% endfor %}

@@ -1,45 +1,82 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# Site settings
+# Theme: Minimal Mistakes, loaded as a remote theme so GitHub Pages can build it.
+# Theme docs: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
 title: Lester Ng Kim Ho
+masthead_title: "Lester Ng Kim Ho"
 email: lesterngkimho@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Lester Ng Kim Ho — full-time software developer based in Malaysia, open to freelance collaborations.
+  Lester Ng Kim Ho — software engineering analyst based in Malaysia, open to freelance collaborations.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lesterngkimho.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.lesterngkimho.my" # the base hostname & protocol for your site (matches CNAME)
 twitter_username: lesterngkimho
-github_username:  lesterngkimho
+github_username: lesterngkimho
+linkedin_url: "https://www.linkedin.com/in/lesterngkimho/"
+resume_url: "" # e.g. /assets/resume.pdf once the file is added; leave empty to hide the link
 
-# Controls the order of pages in the site header nav (minima theme)
-header_pages:
-  - about.markdown
-  - projects.markdown
-  - hire-me.markdown
-  - contact.markdown
+# Author profile shown in the sidebar on posts
+author:
+  name: Lester Ng Kim Ho
+  bio: "Software engineering analyst. Mobile apps, Ionic/Angular, learning native Android."
+  location: "Malaysia"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lesterngkimho/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lesterngkimho"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:lesterngkimho@gmail.com"
+
+# Footer links
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lesterngkimho/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lesterngkimho"
+    - label: "RSS"
+      icon: "fas fa-fw fa-rss-square"
+      url: "/feed.xml"
+
+# Theme settings
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
+minimal_mistakes_skin: "mint"
+search: true
+
+# Home page lists posts; pagination is required by the home layout
+paginate: 5
+paginate_path: "/page:num/"
+
+# Default layouts for every page and post, so front matter stays short
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
