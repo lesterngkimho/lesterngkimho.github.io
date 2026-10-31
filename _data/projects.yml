@@ -1,0 +1,7 @@
+# One entry per project. Shown in the order listed here.
+# Leave `demo` or `source` empty to hide that link.
+- name: "BananaCina"
+  description: "A personal Android app for learning Malaysian Mandarin, built for a Malaysian Chinese adult who needs everyday Mandarin for Grab, church and daily life."
+  stack: ["Android (Kotlin)", "Jetpack Compose"]
+  demo: ""
+  source: "" # private repo, so no public link yet
